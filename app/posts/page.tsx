@@ -1,4 +1,5 @@
 export const dynamic = 'force-dynamic'; // SSR 강제 옵션
+export const revalidate = 0; // ISR/SSG 비활성화
 
 interface Post {
   id: number;
@@ -15,7 +16,7 @@ const PostsPage = async () => {
 
   return (
     <main>
-      <h1>Server Rendered Posts</h1>
+      <h1>📰 Server-Side Rendered Posts</h1>
       <ul>{
         posts.slice(0, 5).map((post) => {
           return <li key={post.id}><strong>{post.title}</strong><p>{post.body}</p></li>
