@@ -1,8 +1,12 @@
+import ContactForm from "./ContactForm";
+import ContactForm2 from "./ContactForm2";
+
 const ContactPage = () => {
   return (
     <main>
       <h1>Contact Us</h1>
-      <p>Email: contact@company.com</p>
+      {/* <ContactForm /> */}
+      <ContactForm2 />
     </main>
   )
 }
